@@ -1,0 +1,5 @@
+group = 'com.walterjwhite.modules.download'
+description = 'download - impl'
+dependencies {
+  compile project(':infrastructure:datastore:api:service')
+}

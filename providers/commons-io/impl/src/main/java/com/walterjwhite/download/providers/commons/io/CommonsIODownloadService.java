@@ -2,7 +2,7 @@ package com.walterjwhite.download.providers.commons.io;
 
 import com.walterjwhite.download.impl.DownloadConfiguration;
 import com.walterjwhite.download.impl.service.AbstractDownloadService;
-import com.walterjwhite.encryption.api.service.DigestService;
+import com.walterjwhite.encryption.service.DigestService;
 import java.io.File;
 import java.net.URL;
 import javax.inject.Inject;

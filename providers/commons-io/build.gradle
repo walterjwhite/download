@@ -1,0 +1,5 @@
+group = 'com.walterjwhite.modules.download.providers'
+description = 'download - providers - commons-io'
+dependencies {
+  compile project(':infrastructure:dependencies:commons-io')
+}

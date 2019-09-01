@@ -3,7 +3,7 @@ package com.walterjwhite.download.impl.service;
 import com.walterjwhite.download.api.model.Download;
 import com.walterjwhite.download.api.service.DownloadService;
 import com.walterjwhite.download.impl.DownloadConfiguration;
-import com.walterjwhite.encryption.api.service.DigestService;
+import com.walterjwhite.encryption.service.DigestService;
 import java.io.File;
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
@@ -33,6 +33,7 @@ public abstract class AbstractDownloadService implements DownloadService {
         if (!isValid(downloadFile, signature)) {
           // remove the file and re-download
           downloadFile.delete();
+          return (false);
         }
 
         return (true);
@@ -57,7 +58,10 @@ public abstract class AbstractDownloadService implements DownloadService {
     }
 
     if (download.getSignature() != null && !isValid(downloadFile, download.getSignature()))
-      throw new IllegalStateException("Signature does not match");
+      throw new IllegalStateException(
+          String.format(
+              "Signature does not match:%s %s",
+              download.getSignature(), downloadFile.getAbsolutePath()));
 
     return downloadFile;
   }
