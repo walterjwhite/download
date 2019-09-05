@@ -4,11 +4,11 @@
   <parent>
     <groupId>com.walterjwhite.java.modules</groupId>
     <artifactId>download</artifactId>
-    <version>0.0.15-SNAPSHOT</version>
+    <version>0.0.17-SNAPSHOT</version>
   </parent>
   <groupId>com.walterjwhite.java.modules.download</groupId>
   <artifactId>impl</artifactId>
-  <version>0.0.15-SNAPSHOT</version>
+  <version>0.0.17-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>download - impl</name>
   <description>download impl</description>
@@ -16,17 +16,17 @@
     <dependency>
       <groupId>com.walterjwhite.java.modules.download.api</groupId>
       <artifactId>service</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.walterjwhite.java.modules.file.api</groupId>
       <artifactId>service</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.walterjwhite.java.modules.encryption</groupId>
       <artifactId>api</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
     </dependency>
   </dependencies>
 </project>
