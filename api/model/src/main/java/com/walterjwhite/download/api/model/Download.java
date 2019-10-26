@@ -24,7 +24,7 @@ public class Download extends AbstractEntity {
     this(uri, null);
   }
 
-  private static final String getFilename(final String uri) {
+  public static final String getFilename(final String uri) {
     final int index = uri.lastIndexOf("/");
     return uri.substring(index + 1);
   }
